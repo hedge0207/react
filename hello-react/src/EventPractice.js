@@ -25,6 +25,9 @@ const EventPractice = () => {
       onClick();
     }
   };
+  const handleClick = () => {
+    console.log("ASDADSA");
+  };
   return (
     <div>
       <h1>이벤트 연습-함수형 컴포넌트</h1>
@@ -44,6 +47,7 @@ const EventPractice = () => {
         onKeyPress={onKeyPress}
       />
       <button onClick={onClick}>확인</button>
+      <button onClick={handleClick}>버튼</button>
     </div>
   );
 };

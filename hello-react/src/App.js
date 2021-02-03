@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import ScrollBox from "./ScrollBox";
 import LifecycleSample from "./LifecycleSample";
 import ErrorBoundary from "./ErrorBoundary";
+import EventPractice from "./EventPractice";
+import EventPracticeSelf from "./EventPracticeSelf";
 
 //state의 color 값을 랜덤 색상으로 설정.
 //1677215는 hex로 표현하면 ffffff가 되므로 아래 코드는 000000부터 ffffff 까지의 값을 반환한다.
@@ -31,6 +33,8 @@ class App extends Component {
           <LifecycleSample color={this.state.color} />
         </ErrorBoundary>
         <button onClick={this.handleClick}>랜덤 색상</button>
+        <EventPractice />
+        <EventPracticeSelf bool />
       </div>
     );
   }

@@ -61,7 +61,7 @@ class LifecycleSample extends Component {
     };
     return (
       <div>
-        {this.props.nothing.value}
+        {/* {this.props.nothing.value} */}
         <h1 style={style} ref={(ref) => (this.myRef = ref)}>
           {this.state.number}
         </h1>
