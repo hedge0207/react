@@ -1,7 +1,7 @@
-import { useSelector } from "react-redux";
-import Todos from "../components/Todo";
-import useActions from "../lib/useActions";
-import { changeInput, insert, toggle, remove } from "../modules/todos";
+import { useSelector } from 'react-redux';
+import Todos from '../components/Todo';
+import useActions from '../lib/useActions';
+import { changeInput, insert, toggle, remove } from '../modules/todos';
 
 const TodosContainer = () => {
   const { input, todos } = useSelector(({ todos }) => ({
@@ -12,6 +12,7 @@ const TodosContainer = () => {
     [changeInput, insert, toggle, remove],
     []
   );
+  console.log(useActions([changeInput, insert, toggle, remove], []));
 
   return (
     <Todos
